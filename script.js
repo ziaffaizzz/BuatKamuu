@@ -27,7 +27,7 @@ function showLove() {
   const loveText = document.getElementById('loveText');
   loveText.style.display = 'block';
 }
-onst playlist = ["about.mp3", "you.mp3", "hivii.mp3", "lany.mp3"];
+const playlist = ["about.mp3", "you.mp3", "hivii.mp3", "lany.mp3"];
 let index = 0;
 const audio = document.getElementById("bgMusic");
 function playMusic() {
