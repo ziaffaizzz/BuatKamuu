@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<audio id="bgMusic" loop>
+  <source src="hivii.mp3" type="audio/mpeg">
+  Browser kamu tidak mendukung audio.
+</audio>
+<head>
+  <style>
+  .heart {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    transform: rotate(45deg);
+    animation: fall 4s linear infinite;
+    top: -20px;
+  }
+
+  .heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+
+  @keyframes fall {
+    0% {
+      top: -20px;
+      opacity: 1;
+    }
+    100% {
+      top: 100vh;
+      opacity: 0;
+    }
+  }
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Kamu Hehe </title>
+  <link rel="stylesheet" href="style.css">
+</head>>
+<body>
+  <header>
+    <div class="music-control">
+  <button onclick="playMusic()">Putar Musik 🎵</button>
+</div>
+    <h1>Hai Cantikk </h1>
+    <p>Ini aku buat spesial buat kamu :p</p>
+  </header>
+
+  <section class="gallery">
+    <h2>Kenangan Roblox 📷</h2>
+    <div class="photo-grid">
+      <img src="roblox 1.png" alt="Foto 1">
+      <img src="roblox 2.jpg" alt="Foto 2">
+      <img src="roblox 3.png" alt="Foto 3">
+    </div>
+  </section>
+
+  <section class="message">
+    <h2>Pesan untuk Kamu 💌</h2>
+    <p>
+    Website ini aku bikin buat kamu. Gak ribet, cuma pengen bilang: asoy.
+    </p>
+  </section>
+
+  <section class="love-button">
+    <button onclick="showLove()">Klik kalau kamu kangen aku :p </button>
+    <p id="loveText" style="display: none;">ciee kangenn</p>
+  </section>
+
+  <footer>
+    <p>Dibuat untuk Ine Rahmawati :p </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
